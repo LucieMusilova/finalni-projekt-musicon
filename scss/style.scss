@@ -29,6 +29,8 @@ html { box-sizing: border-box; }
   background-color: $c-body;
 }
 
+//HOMEPAGE
+
 //hlavička
 .header {
   background-color: $c-medium;
@@ -124,7 +126,7 @@ html { box-sizing: border-box; }
 //sekce novinky a line-up  nadpisy a odsazení
 
 .line-up,
-.news {
+.news-hp {
 
   
   @media screen and (min-width: 999px) {
@@ -186,6 +188,19 @@ html { box-sizing: border-box; }
     }
     @media screen and (min-width: 999px) {
       grid-column: 1 / 5;
+    }
+
+     &:hover {
+      background-color: rgb(29, 29, 29);
+    }
+  }
+
+  &__link {
+    color: $c-white;
+    text-decoration: none;
+
+    &:hover {
+      color: $c-marked;
     }
   }
   
@@ -297,12 +312,6 @@ html { box-sizing: border-box; }
 
 
 
-
-@media screen and (min-width: 999px) {
-   
-    
-}
-
 // patička
 
 .footer {
@@ -315,4 +324,77 @@ html { box-sizing: border-box; }
     margin: 0;
     padding: 5px;
   }
+}
+
+//SPOLEČNÉ NASTAVENÍ PRO OSTATNÍ STRÁNKY
+
+.merch,
+.contacts,
+.news,
+.practical,
+.tickets,
+.program {
+  background-color: $c-white;
+  max-width: 1140px;
+  margin: 0 auto;   
+}
+
+.top {
+  background-size: 100%, cover;
+  height: 200px;
+
+  &__title {
+    margin:0;
+    text-transform: uppercase;
+    font-size: $f-size-big;
+  }
+
+  &__title,
+  &__text {
+    color: $c-white;
+    text-shadow: 1px 1px 1px black;
+    padding-left: $spacer;
+    transform: translateY(80px);
+    font-weight: bold;
+  }
+
+  &__text {
+    font-size: $f-size-middle;
+  }
+}
+
+//NOVINKY
+
+.news .top {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/images/merch_background.jpg");
+}
+
+//PROGRAM
+
+.program .top {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/images/merch_background.jpg");
+}
+
+//MERCH
+
+.merch .top {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/images/merch_background.jpg");
+}
+
+//PRAKTICKE
+
+.practical .top {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/images/merch_background.jpg");
+}
+
+//KONTAKTY
+
+.contacts .top {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/images/merch_background.jpg");
+}
+
+//VSTUPENKY
+
+.tickets .top {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/images/merch_background.jpg");
 }
