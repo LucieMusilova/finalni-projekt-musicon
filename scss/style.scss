@@ -448,6 +448,21 @@ html { box-sizing: border-box; }
     margin: $spacer;
   }
 
+  &__accommodation {
+    @media screen and (min-width: 768px) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: $spacer;
+    }  
+  }
+
+  &__name {
+    @media screen and (min-width: 768px) {
+      grid-column: 1 / 4;
+    }  
+  }
+
+
   &__item {
     display: block;
     max-width: 350px;
@@ -471,12 +486,39 @@ html { box-sizing: border-box; }
   }
 
   &__img {
-    width: 100%;
+    max-width: 100%;
   }
 
   &__text {
     padding-right: $spacer;
     padding-left: $spacer;
+  }
+
+  &__direction {
+    display: block;
+    max-width: 768px;
+
+    @media screen and (min-width: 768px) {
+      max-width: 1900px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 400px;
+    }
+  }
+
+
+  &__box {
+    @media screen and (min-width: 768px) {
+      grid-column: 1 / 3;
+    }
+  }
+
+  &__map {
+    margin-top: 40px;
+
+    @media screen and (min-width: 768px) {
+      margin-left: 40px;;
+      grid-column: 3 / 4;
+    }
   }
 }
 
