@@ -291,6 +291,7 @@ html {
   background-color: white;
   max-width: 1140px;
   margin: 0 auto;
+  padding-bottom: 20px;
 }
 
 .top {
@@ -314,25 +315,77 @@ html {
 }
 
 .news .top {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/images/merch_background.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/images/novinky_background.jpg");
 }
 
 .program .top {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/images/merch_background.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("/images/program_background.jpg");
 }
 
 .merch .top {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/images/merch_background.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("/images/merch_background.jpg");
+}
+
+.products {
+  margin: 0 auto;
+  padding-top: 20px;
+  max-width: 390px;
+}
+@media screen and (min-width: 780px) {
+  .products {
+    max-width: 780px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1170px) {
+  .products {
+    max-width: 1170px;
+  }
+}
+
+.product {
+  max-width: 350px;
+  border: 1px solid #C7C1C1;
+  text-align: center;
+  margin: 20px;
+}
+@media screen and (min-width: 768px) {
+  .product {
+    flex-basis: 50%;
+  }
+}
+@media screen and (min-width: 1170px) {
+  .product {
+    flex-basis: 33%;
+    margin: 10px;
+  }
+}
+.product__img {
+  width: 100%;
+}
+.product__btn {
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  background-color: #fcbf00;
+  color: white;
+  border: none;
+  border-radius: 5%;
+  font-weight: bold;
+}
+.product__btn:hover {
+  background-color: #e9af00;
 }
 
 .practical .top {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/images/merch_background.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/images/prakticke_background.jpg");
 }
 
 .contacts .top {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/images/merch_background.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/images/kontakty_background.jpg");
 }
 
 .tickets .top {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/images/merch_background.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("/images/vstupenky_background.jpg");
 }/*# sourceMappingURL=style.css.map */

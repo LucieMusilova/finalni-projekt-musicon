@@ -3,6 +3,7 @@ $spacer: 20px;
 $c-main: #f8f8f8;
 $c-body: #d6d6d6;
 $c-marked: #fcbf00;
+$c-marked-hover:#e9af00;
 $c-dark: black;
 $c-light-dark: #423C3C;
 $c-medium: #1C1B1B;
@@ -337,6 +338,7 @@ html { box-sizing: border-box; }
   background-color: $c-white;
   max-width: 1140px;
   margin: 0 auto;   
+  padding-bottom: $spacer;
 }
 
 .top {
@@ -366,35 +368,92 @@ html { box-sizing: border-box; }
 //NOVINKY
 
 .news .top {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/images/merch_background.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/images/novinky_background.jpg");
 }
 
 //PROGRAM
 
 .program .top {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/images/merch_background.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("/images/program_background.jpg");
 }
 
 //MERCH
 
 .merch .top {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/images/merch_background.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("/images/merch_background.jpg");
 }
+
+.products {
+  margin: 0 auto;
+  padding-top: $spacer;
+  max-width: 390px;
+
+  @media screen and (min-width: 780px) {
+    max-width: 780px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 1170px) {
+    max-width: 1170px;
+  }
+}
+
+.product {
+  max-width: 350px;
+  border: 1px solid $c-light;
+  text-align: center;
+  margin: $spacer;
+
+  @media screen and (min-width: 768px) {
+    flex-basis: 50%;
+  }
+
+  @media screen and (min-width: 1170px) {
+    flex-basis: 33%;
+    margin: 10px;
+  }
+
+
+  &__img {
+    width: 100%;
+  }
+
+  &__btn {
+    margin-bottom: $spacer;
+    padding: 10px $spacer;
+    background-color: $c-marked;
+    color: $c-white;
+    border: none;
+    border-radius: 5%;
+    font-weight: bold;
+
+    &:hover {
+      background-color: $c-marked-hover;
+    }
+  }
+}
+
+
+
+
+
 
 //PRAKTICKE
 
 .practical .top {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/images/merch_background.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/images/prakticke_background.jpg");
 }
 
 //KONTAKTY
 
 .contacts .top {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/images/merch_background.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/images/kontakty_background.jpg");
 }
 
 //VSTUPENKY
 
 .tickets .top {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/images/merch_background.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("/images/vstupenky_background.jpg");
 }
