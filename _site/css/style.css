@@ -79,7 +79,7 @@ html {
 @media screen and (min-width: 999px) {
   .header__link-last {
     border: 2px solid #fcbf00;
-    border-radius: 5%;
+    border-radius: 5px;
     padding: 10px;
   }
   .header__link-last:hover, .header__link-last:focus {
@@ -371,7 +371,7 @@ html {
   background-color: #fcbf00;
   color: white;
   border: none;
-  border-radius: 5%;
+  border-radius: 5px;
   font-weight: bold;
 }
 .product__btn:hover {
@@ -380,6 +380,36 @@ html {
 
 .practical .top {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/images/prakticke_background.jpg");
+}
+
+.practical__accommodation, .practical__direction {
+  margin: 20px;
+}
+.practical__item {
+  display: block;
+  max-width: 350px;
+  border: 1px solid #C7C1C1;
+  margin: 0 auto 20px auto;
+  text-align: center;
+}
+.practical__btn {
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  background-color: #fcbf00;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.practical__btn:hover {
+  background-color: #e9af00;
+}
+.practical__img {
+  width: 100%;
+}
+.practical__text {
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 .contacts .top {
@@ -429,7 +459,7 @@ html {
   background-color: #fcbf00;
   color: white;
   border: none;
-  border-radius: 5%;
+  border-radius: 5px;
   font-weight: bold;
 }
 .tickets__btn:hover {

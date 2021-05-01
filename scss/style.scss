@@ -108,7 +108,7 @@ html { box-sizing: border-box; }
     @media screen and (min-width: 999px) {
       &-last {
         border: 2px solid $c-marked;
-        border-radius: 5%;
+        border-radius: 5px;
         padding: 10px;
 
           &:hover,
@@ -426,7 +426,7 @@ html { box-sizing: border-box; }
     background-color: $c-marked;
     color: $c-white;
     border: none;
-    border-radius: 5%;
+    border-radius: 5px;
     font-weight: bold;
 
     &:hover {
@@ -436,15 +436,50 @@ html { box-sizing: border-box; }
 }
 
 
-
-
-
-
 //PRAKTICKE
 
 .practical .top {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/images/prakticke_background.jpg");
 }
+
+.practical {
+  &__accommodation,
+  &__direction {
+    margin: $spacer;
+  }
+
+  &__item {
+    display: block;
+    max-width: 350px;
+    border: 1px solid $c-light;
+    margin: 0 auto $spacer auto;
+    text-align: center;
+  }
+  
+  &__btn {
+    margin-bottom: $spacer;
+    padding: 10px $spacer;
+    background-color: $c-marked;
+    color: $c-white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+
+    &:hover {
+      background-color: $c-marked-hover;
+    }
+  }
+
+  &__img {
+    width: 100%;
+  }
+
+  &__text {
+    padding-right: $spacer;
+    padding-left: $spacer;
+  }
+}
+
 
 //KONTAKTY
 
@@ -502,7 +537,7 @@ html { box-sizing: border-box; }
     background-color: $c-marked;
     color: $c-white;
     border: none;
-    border-radius: 5%;
+    border-radius: 5px;
     font-weight: bold;
 
     &:hover {
