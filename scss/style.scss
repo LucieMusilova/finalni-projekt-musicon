@@ -457,3 +457,71 @@ html { box-sizing: border-box; }
 .tickets .top {
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("/images/vstupenky_background.jpg");
 }
+
+.tickets {
+  &__box {
+    display: block;
+    padding: $spacer;  
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+      max-width: 1400px;
+      padding: 40px;
+    }
+  }
+
+  &__items {
+    @media screen and (min-width: 768px) {
+      flex-basis: 65%;
+      margin-right: 30px;
+    }
+  } 
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }  
+
+  &__day {
+    flex-basis: 50%;
+  }  
+
+  &__price {
+    flex-basis: 30%;
+    font-weight: bold;
+  }  
+  
+  &__btn {
+    flex-basis: 80px;
+    padding: 7px;
+    background-color: $c-marked;
+    color: $c-white;
+    border: none;
+    border-radius: 5%;
+    font-weight: bold;
+
+    &:hover {
+      background-color: $c-marked-hover;
+    }
+  }  
+
+  &__pic {
+    max-width: 400px;
+    margin: 0 auto;
+
+    @media screen and (min-width: 768px) {
+      flex-basis: 35%;
+      margin:0;
+    }
+  }
+  
+  &__img {
+    padding-top: $spacer;
+    width: 100%;
+  }  
+}
