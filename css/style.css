@@ -429,7 +429,7 @@ html {
 }
 @media screen and (min-width: 768px) {
   .practical__direction {
-    max-width: 1900px;
+    max-width: 1140px;
     display: grid;
     grid-template-columns: 1fr 1fr 400px;
   }
@@ -451,6 +451,57 @@ html {
 
 .contacts .top {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/images/kontakty_background.jpg");
+}
+
+.contacts__call, .contacts__write, .contacts__social {
+  padding: 20px 20px 0 20px;
+}
+.contacts__form {
+  width: 100%;
+  max-width: 550px;
+  border: 2px solid #fcbf00;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 30px;
+  background-color: #fffaed;
+}
+.contacts__label {
+  display: block;
+  margin-top: 10px;
+}
+.contacts__input {
+  margin: 8px 0 10px 0;
+  width: 100%;
+  border: 1px solid #fcbf00;
+  border-radius: 2px;
+  padding: 10px;
+  font-size: 16px;
+}
+.contacts__input:focus {
+  outline: 0;
+  border: 2px solid #e9af00;
+  background-color: #ffecb2;
+}
+.contacts__checkbox {
+  display: inline-block;
+  margin-top: 10px;
+}
+.contacts__btn {
+  display: block;
+  margin-top: 20px;
+  margin-left: auto;
+  padding: 10px 20px;
+  background-color: #fcbf00;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.contacts__btn:hover {
+  background-color: #e9af00;
+}
+.contacts__required {
+  color: #fcbf00;
 }
 
 .tickets .top {
@@ -515,4 +566,7 @@ html {
 .tickets__img {
   padding-top: 20px;
   width: 100%;
+}
+.tickets__text {
+  padding: 20px 40px 0 0;
 }/*# sourceMappingURL=style.css.map */

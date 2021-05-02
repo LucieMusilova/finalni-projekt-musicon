@@ -499,7 +499,7 @@ html { box-sizing: border-box; }
     max-width: 768px;
 
     @media screen and (min-width: 768px) {
-      max-width: 1900px;
+      max-width: 1140px;
       display: grid;
       grid-template-columns: 1fr 1fr 400px;
     }
@@ -528,6 +528,72 @@ html { box-sizing: border-box; }
 .contacts .top {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/images/kontakty_background.jpg");
 }
+
+.contacts {
+  &__call,
+  &__write,
+  &__social {
+    padding: $spacer $spacer 0 $spacer;
+
+  }
+
+  &__form {
+    width: 100%;
+    max-width: 550px;
+    border: 2px solid $c-marked;
+    border-radius: 10px;
+    padding: $spacer;
+    margin-top: 30px;
+    background-color: #fffaed;
+  }
+
+  &__label {
+    display: block;
+    margin-top: 10px;
+  }
+
+  &__input {
+    margin: 8px 0 10px 0;
+    width: 100%;
+    border: 1px solid $c-marked;
+    border-radius: 2px;
+    padding: 10px;
+    font-size: $f-size-base;
+
+    &:focus {
+      outline: 0;
+      border: 2px solid $c-marked-hover;
+      background-color: #ffecb2;
+    }
+
+  }
+
+  &__checkbox {
+    display: inline-block;
+    margin-top: 10px;
+  }
+
+  &__btn {
+    display: block;
+    margin-top: $spacer;
+    margin-left: auto;
+    padding: 10px $spacer;
+    background-color: $c-marked;
+    color: $c-white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+
+    &:hover {
+      background-color: $c-marked-hover;
+    }
+  }
+
+  &__required {
+    color: $c-marked;
+  }
+}
+
 
 //VSTUPENKY
 
@@ -600,5 +666,9 @@ html { box-sizing: border-box; }
   &__img {
     padding-top: $spacer;
     width: 100%;
+  }  
+  
+  &__text {
+    padding: $spacer 40px 0 0;
   }  
 }

@@ -7,9 +7,47 @@ title: Kontakty | MusicOn Brno
   
   <div class="top">
     <h2 class="top__title">Kontakt</h2>
-    <p class="top__text">Máš nějaké otázky? Kontaktuj nás telefonicky nebo nám napiš zprávu</p>
+    <p class="top__text">Máš nějaké otázky? Chceš pracovat na festivalu nebo máš nápad na zlepšení?</p>
   </div>
 
+  <div class="contacts__call">
+    <h2 class="contacts__title">Zavolej nám</h2>
+    <h3 class="contacts__phone">+420 123 456 789</h3>
+    <p class="contacts__text">Jsme tu pro tebe od 8:00 do 18:00 každý všední den a od 9:00 do 15:00 o víkendu.</p>
+  </div>
 
+  <div class="contacts__write">
+    <h2 class="contacts__title">Nebo napiš zprávu</h2>
+    
+    <form class="contacts__form" method="post" action="http://formular.itgirls.cz">
+      <label class="contacts__label" for="name">Tvoje jméno a příjmení: <span class="contacts__required">*</span> </label>
+      <input class="contacts__input" type="text" name="name" id="name" maxlength="30" required>
+
+      <label class="contacts__label" for="email">Tvůj email: <span class="contacts__required">*</span></label>
+      <input class="contacts__input" type="email" name="email" id="email" maxlength="30" required>
+
+      <label class="contacts__label" for="phone">Tvůj telefon: </label>
+      <input class="contacts__input" type="tel" name="phone" id="phone" maxlength="15">
+
+      <label class="contacts__label" for="message">Zpráva pro nás: </label>
+      <textarea class="contacts__input" name="message" id="message" rows="7" maxlength="1000"> </textarea>
+
+      <div class="contacts__checkbox">
+        <input  type="checkbox" name="check" id="check" value="yes">
+        <label  for="check">Souhlasím se zpracováním osobních údajů </label>
+      </div>
+
+      <button class="contacts__btn" type="submit" name="button" id="send">Odeslat</button>
+      
+    </form>
+
+  </div>
+
+  <div class="contacts__social">
+    <h2 class="contacts__title">Najdeš nás i na sociálních sítích</h2>
+    <img class="contacts__icon" src="/images/icon_facebook.png" alt="Facebook">
+    <img class="contacts__icon" src="/images/icon_instagram.png" alt="Instagram">
+    <img class="contacts__icon" src="/images/icon_linkedin.png" alt="LinkedIn">
+  </div>
 
 </section>
