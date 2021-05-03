@@ -377,6 +377,60 @@ html { box-sizing: border-box; }
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("/images/program_background.jpg");
 }
 
+.program {
+  &__menu {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: $c-grey;
+  }
+
+  &__list {
+    list-style: none;
+    text-align: center;
+  }
+
+  &__link {
+    display: block;
+    padding: $spacer;
+    text-decoration: none;
+    color: $c-white;
+    font-size: $f-size-h;
+
+    &:hover,
+    &:focus{
+      background-color: $c-light-dark;
+      color: $c-marked;
+    }
+  }
+
+  &__day {
+    padding: 40px;
+    padding-bottom: 10px;
+
+    @media screen and (min-width: 711px) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  &__img {
+    margin-top: $spacer;
+    width: 100%;
+    max-width: 400px;
+
+    @media screen and (min-width: 711px) {
+      margin-left: 40px;
+      margin-top: 0;
+    }
+  }
+
+
+}
+
+
 //MERCH
 
 .merch .top {

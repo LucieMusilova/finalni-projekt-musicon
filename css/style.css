@@ -322,6 +322,51 @@ html {
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("/images/program_background.jpg");
 }
 
+.program__menu {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #292929;
+}
+.program__list {
+  list-style: none;
+  text-align: center;
+}
+.program__link {
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+.program__link:hover, .program__link:focus {
+  background-color: #423C3C;
+  color: #fcbf00;
+}
+.program__day {
+  padding: 40px;
+  padding-bottom: 10px;
+}
+@media screen and (min-width: 711px) {
+  .program__day {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+.program__img {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 400px;
+}
+@media screen and (min-width: 711px) {
+  .program__img {
+    margin-left: 40px;
+    margin-top: 0;
+  }
+}
+
 .merch .top {
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("/images/merch_background.jpg");
 }
