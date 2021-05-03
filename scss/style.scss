@@ -378,6 +378,8 @@ html { box-sizing: border-box; }
 }
 
 .program {
+  padding-bottom: 0;
+  
   &__menu {
     margin: 0;
     padding: 0;
@@ -427,7 +429,56 @@ html { box-sizing: border-box; }
     }
   }
 
+  &__all {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 568px;
+    margin: 0 auto;
+    background-color: $c-medium;
 
+    @media screen and (min-width: 768px) {
+      max-width: 855px; 
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    @media screen and (min-width: 999px) {
+      max-width: 1140px; 
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+
+  }
+
+  &__pic {
+    position: relative;
+    overflow: hidden;
+
+  }
+
+  &__image {
+    max-width: 100%;
+    display: block;
+    transition: transform 0.5s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+  }
+
+  &__text {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: $c-white;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    margin: 0;
+    font-size: $f-size-h;
+
+  }
 }
 
 
