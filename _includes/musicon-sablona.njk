@@ -7,10 +7,9 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-  
-
-
-  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/glide.core.min.css">
+  <link rel="stylesheet" href="/css/glide.theme.min.css">
   <title>{{ title }}</title>
 </head>
 <body class="body">
@@ -35,6 +34,15 @@
       <p class="footer__text">©2021, Lucie Musilová</p>
     </footer>
 
-   
+    <script src="/glide.min.js"></script>
+
+    <script>
+      new Glide('.glide', {
+        autoplay: 2000,
+        hoverpause: false,
+        type: 'carousel'
+      }).mount()
+    </script>
+    
 </body>
 </html>

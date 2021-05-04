@@ -314,6 +314,10 @@ html {
   font-size: 20px;
 }
 
+.main__img {
+  width: 100%;
+}
+
 .news .top {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/images/novinky_background.jpg");
 }

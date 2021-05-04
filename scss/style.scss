@@ -365,6 +365,14 @@ html { box-sizing: border-box; }
   }
 }
 
+//carousel main
+.main {
+  &__img {
+    width: 100%;
+  }
+}
+
+
 //NOVINKY
 
 .news .top {
@@ -379,7 +387,7 @@ html { box-sizing: border-box; }
 
 .program {
   padding-bottom: 0;
-  
+
   &__menu {
     margin: 0;
     padding: 0;
