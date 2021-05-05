@@ -124,6 +124,34 @@ html { box-sizing: border-box; }
   }
 }
 
+//horní carousel
+
+.main {
+  &__track,
+  &__slides,
+  &__slide,
+  &__img {
+    margin:0;
+  }
+
+  &__slide,
+  &__track {
+    max-height: 690px;
+    max-width: 1920px;
+    overflow: hidden;
+  }
+
+
+  &__img {
+    width: 100%;
+    max-height: 690px;
+    max-width: 1920px;
+    object-fit: cover;
+  }
+
+}
+
+
 //sekce novinky a line-up  nadpisy a odsazení
 
 .line-up,
@@ -365,12 +393,6 @@ html { box-sizing: border-box; }
   }
 }
 
-//carousel main
-.main {
-  &__img {
-    width: 100%;
-  }
-}
 
 
 //NOVINKY

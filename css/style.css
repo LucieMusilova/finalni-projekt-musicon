@@ -88,6 +88,22 @@ html {
   }
 }
 
+.main__track, .main__slides, .main__slide, .main__img {
+  margin: 0;
+}
+.main__slide, .main__track {
+  max-height: 690px;
+  max-width: 1920px;
+  overflow: hidden;
+}
+.main__img {
+  width: 100%;
+  max-height: 690px;
+  max-width: 1920px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 @media screen and (min-width: 999px) {
   .line-up,
 .news-hp {
@@ -312,10 +328,6 @@ html {
 }
 .top__text {
   font-size: 20px;
-}
-
-.main__img {
-  width: 100%;
 }
 
 .news .top {
