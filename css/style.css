@@ -40,13 +40,36 @@ html {
   max-width: 180px;
   background-color: #fcbf00;
 }
+.header__check {
+  position: absolute;
+  left: -9999px;
+}
+.header__check:checked ~ .header__menu {
+  display: block;
+}
+.header__toggler {
+  color: white;
+  font-size: 20px;
+  width: 120px;
+}
+@media screen and (min-width: 999px) {
+  .header__toggler {
+    display: none;
+  }
+}
+.header__hamburger {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .header__menu {
+  display: none;
   padding: 0;
   margin: 0;
 }
 @media screen and (min-width: 999px) {
   .header__menu {
-    display: flex;
+    display: flex !important;
     flex-basis: 80%;
     justify-content: flex-end;
     align-items: center;
@@ -96,12 +119,55 @@ html {
   max-width: 1920px;
   overflow: hidden;
 }
+.main__slide {
+  position: relative;
+}
+@-webkit-keyframes zoom {
+  from {
+    transform: scale(1.4);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes zoom {
+  from {
+    transform: scale(1.4);
+  }
+  to {
+    transform: scale(1);
+  }
+}
 .main__img {
   width: 100%;
   max-height: 690px;
   max-width: 1920px;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-animation: zoom 25s infinite;
+          animation: zoom 25s infinite;
+}
+.main__text {
+  position: absolute;
+  left: 3%;
+  bottom: 18%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 20px;
+}
+.main__title {
+  font-size: 3vw;
+  font-weight: bold;
+}
+.main__title:first-child {
+  margin-top: 0;
+}
+.main__p {
+  font-size: 2vw;
+  font-weight: bold;
+}
+.main__p:last-child {
+  margin-bottom: 0;
 }
 
 @media screen and (min-width: 999px) {
@@ -364,7 +430,7 @@ html {
   color: #fcbf00;
 }
 .program__day {
-  padding: 40px;
+  padding: 35px;
   padding-bottom: 10px;
 }
 @media screen and (min-width: 711px) {
@@ -427,6 +493,9 @@ html {
   bottom: 0;
   margin: 0;
   font-size: 18px;
+}
+.program__first {
+  margin-top: 0;
 }
 
 .merch .top {

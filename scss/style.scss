@@ -41,20 +41,15 @@ html { box-sizing: border-box; }
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
-    
   }
  
   &__logo {
     text-align: left;
     width: 100%;
 
-
     @media screen and (min-width: 999px) {
-      flex-basis: 20%;
-    
+      flex-basis: 20%;  
     }
-
   }
 
   &__img {
@@ -63,13 +58,38 @@ html { box-sizing: border-box; }
     background-color: $c-marked;
   }
 
+  &__check {
+    position: absolute;
+    left: -9999px;
+
+    &:checked ~ .header__menu {
+      display: block;
+    }
+  }
+
+  &__toggler {
+    color: white;
+    font-size: $f-size-middle;
+    width: 120px;
+
+    @media screen and (min-width: 999px) {
+      display: none;  
+    }
+  }
+
+  &__hamburger {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
   &__menu {
+    display: none;
     padding: 0;
     margin: 0;
 
     @media screen and (min-width: 999px) {
-      display: flex;
+      display: flex !important;
       flex-basis: 80%;
       justify-content: flex-end;
       align-items: center;
@@ -117,10 +137,7 @@ html { box-sizing: border-box; }
             color: $c-white;
           }
       }
-
     }
-    
-   
   }
 }
 
@@ -141,13 +158,56 @@ html { box-sizing: border-box; }
     overflow: hidden;
   }
 
+  &__slide {
+    position: relative;
+  }
+
+  @keyframes zoom {
+    from { 
+      transform: scale(1.4);
+    }
+    to {
+      transform: scale(1.0)
+    }
+  }
+
 
   &__img {
     width: 100%;
     max-height: 690px;
     max-width: 1920px;
     object-fit: cover;
+    animation: zoom 25s infinite;
   }
+
+  &__text {
+    position: absolute;
+    left: 3%;
+    bottom: 18%;
+    color: $c-white;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: $spacer;
+  }
+
+  &__title {
+    font-size: 3vw;
+    font-weight: bold;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  &__p {
+    font-size: 2vw;
+    font-weight: bold;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+
 
 }
 
@@ -438,7 +498,7 @@ html { box-sizing: border-box; }
   }
 
   &__day {
-    padding: 40px;
+    padding: 35px;
     padding-bottom: 10px;
 
     @media screen and (min-width: 711px) {
@@ -508,6 +568,10 @@ html { box-sizing: border-box; }
     margin: 0;
     font-size: $f-size-h;
 
+  }
+
+  &__first {
+    margin-top: 0;
   }
 }
 
