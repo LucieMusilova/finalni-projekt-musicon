@@ -36,16 +36,15 @@ html { box-sizing: border-box; }
 .header {
   background-color: $c-medium;
   padding: 0 $spacer;
-
-  @media screen and (min-width: 999px) {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
  
   &__logo {
     text-align: left;
     width: 100%;
+    flex-basis: 50%;
 
     @media screen and (min-width: 999px) {
       flex-basis: 20%;  
@@ -70,23 +69,21 @@ html { box-sizing: border-box; }
   &__toggler {
     color: white;
     font-size: $f-size-middle;
+    text-align: right;
     width: 120px;
+    flex-basis: 50%;
 
     @media screen and (min-width: 999px) {
       display: none;  
     }
   }
 
-  &__hamburger {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
 
   &__menu {
     display: none;
     padding: 0;
     margin: 0;
+    flex-basis: 100%;
 
     @media screen and (min-width: 999px) {
       display: flex !important;

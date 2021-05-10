@@ -18,17 +18,15 @@ html {
 .header {
   background-color: #1C1B1B;
   padding: 0 20px;
-}
-@media screen and (min-width: 999px) {
-  .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 .header__logo {
   text-align: left;
   width: 100%;
+  flex-basis: 50%;
 }
 @media screen and (min-width: 999px) {
   .header__logo {
@@ -50,22 +48,20 @@ html {
 .header__toggler {
   color: white;
   font-size: 20px;
+  text-align: right;
   width: 120px;
+  flex-basis: 50%;
 }
 @media screen and (min-width: 999px) {
   .header__toggler {
     display: none;
   }
 }
-.header__hamburger {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 .header__menu {
   display: none;
   padding: 0;
   margin: 0;
+  flex-basis: 100%;
 }
 @media screen and (min-width: 999px) {
   .header__menu {
