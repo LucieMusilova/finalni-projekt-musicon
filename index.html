@@ -40,13 +40,17 @@ title: MusicOn Brno | Fiktivní hudební festival
       <section class="news-hp">
         <h2 class="news-hp__title">Novinky</h2>
 
-        {% for prispevek in collections.novinky | reverse %}
+        <div class="news-hp__item">
+          <div class="news-hp__news">
+            {% for prispevek in collections.novinky | reverse %}
 
-              <h2>{{ prispevek.data.title }}</h2>
-              <p>{{ prispevek.data.perex }}</p>
-              <p><a href="{{ prispevek.url }}">Více</a></p>
-                   
-        {% endfor %} 
+                  <h2>{{ prispevek.data.title }}</h2>
+                  <p>{{ prispevek.data.perex }}</p>
+                  <p><a class="news-hp__link" href="{{ prispevek.url }}">Více</a></p>          
+            {% endfor %} 
+          </div>
+          <div class="news-hp__pic"><img class="news-hp__img"  src="/images/thom-artway.jpg" alt="Thom Artway"></div>
+        </div>
 
       </section>
 

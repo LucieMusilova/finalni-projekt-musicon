@@ -182,6 +182,33 @@ html {
   padding: 20px;
 }
 
+.news-hp {
+  background-color: white;
+}
+.news-hp__item {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.news-hp__news {
+  padding-right: 40px;
+  flex-basis: 60%;
+}
+.news-hp__pic {
+  max-width: 500px;
+  flex-basis: 40%;
+}
+.news-hp__img {
+  width: 100%;
+}
+.news-hp__link {
+  color: #fcbf00;
+}
+.news-hp__link:hover {
+  color: #e9af00;
+}
+
 .line-up__grid {
   display: grid;
   background-color: #1C1B1B;

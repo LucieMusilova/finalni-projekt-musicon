@@ -228,6 +228,43 @@ html { box-sizing: border-box; }
 
 }
 
+//sekce novinky
+
+.news-hp {
+  background-color: $c-white;
+  
+  &__item {
+    padding: $spacer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__news {
+    padding-right: 40px;
+    flex-basis: 60%;
+  }
+
+  &__pic {
+    max-width: 500px;
+    flex-basis: 40%;
+  }
+
+  &__img {
+   width: 100%;
+  }
+
+  &__link {
+    color: $c-marked;
+
+    &:hover {
+      color: $c-marked-hover;
+    }
+
+  }
+
+}
+
 
 //sekce line-up
 

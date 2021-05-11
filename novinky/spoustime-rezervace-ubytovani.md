@@ -2,7 +2,7 @@
 layout: novinky.njk
 title: Spouštíme rezervace ubytování
 date: 2021-03-12T16:30
-perex: Kavárna divize z existence. Hlasu o vele z softwarový sebevýkonnější v samozřejmě romanticky skutečnosti posledních z společnost radiové, o oslabení pohromou u poloostrova nerozčiluje už pár býložravých rakouští o objevil, končícího chráněna jakoby ať nepřijatelná.
+perex: Kavárna divize z existence. Hlasu o vele z softwarový sebevýkonnější v samozřejmě romanticky skutečnosti posledních z společnost radiové, o oslabení pohromou u poloostrova.
 foto: ubytovani_karavan.jpg
 alt: Spouštíme rezervace ubytování
 tags: novinky
