@@ -1,0 +1,32 @@
+---
+layout: musicon-sablona.njk
+title: Novinky | MusicOn Brno 
+---
+
+<section class="news">
+  <div class="top">
+    <h2 class="top__title">Novinky</h2>
+    <p class="top__text">Zjisti, jaké jsou nejžhavější novinky festivalu</p>
+  </div>
+
+<article class="article">
+
+	<h1 class="article__title">{{ title }}</h1>
+
+	<p class="article__meta">{{ page.date.toLocaleString('cs-CZ') }}</p>
+	<div class="article__content">
+
+		<div class="article__text">
+      <p class="article__perex">{{ perex }}</p>
+
+      {{ content | safe }}
+
+		</div>
+
+		<img class="article__image" src="/images/{{ foto }}" alt="{{ alt }}">
+
+	</div>
+
+</article>
+
+</section>

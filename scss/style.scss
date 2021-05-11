@@ -157,6 +157,7 @@ html { box-sizing: border-box; }
 
   &__slide {
     position: relative;
+    display: block;
   }
 
   @keyframes zoom {
@@ -164,7 +165,7 @@ html { box-sizing: border-box; }
       transform: scale(1.4);
     }
     to {
-      transform: scale(1.0)
+      transform: scale(1.02);
     }
   }
 
@@ -173,7 +174,6 @@ html { box-sizing: border-box; }
     width: 100%;
     max-height: 690px;
     max-width: 1920px;
-    object-fit: cover;
     animation: zoom 25s infinite;
   }
 
@@ -203,9 +203,6 @@ html { box-sizing: border-box; }
       margin-bottom: 0;
     }
   }
-
-
-
 }
 
 
@@ -488,10 +485,15 @@ html { box-sizing: border-box; }
     font-size: $f-size-h;
 
     &:hover,
-    &:focus{
+    &:focus {
       background-color: $c-light-dark;
       color: $c-marked;
     }
+  }
+
+  &__link--active {
+    background-color: $c-light-dark;
+    color: $c-marked;
   }
 
   &__day {

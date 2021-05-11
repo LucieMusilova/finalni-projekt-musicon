@@ -39,7 +39,15 @@ title: MusicOn Brno | Fiktivní hudební festival
       
       <section class="news-hp">
         <h2 class="news-hp__title">Novinky</h2>
-        
+
+        {% for prispevek in collections.novinky | reverse %}
+
+              <h2>{{ prispevek.data.title }}</h2>
+              <p>{{ prispevek.data.perex }}</p>
+              <p><a href="{{ prispevek.url }}">Více</a></p>
+                   
+        {% endfor %} 
+
       </section>
 
       <section class="line-up">

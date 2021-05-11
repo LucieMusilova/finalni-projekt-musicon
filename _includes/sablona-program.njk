@@ -10,10 +10,10 @@ layout: musicon-sablona.njk
   </div>
 
   <ul class="program__menu">
-    <li class="program__list"><a class="program__link" href="/program/">Vše</a></li>
-    <li class="program__list"><a class="program__link" href="/program/ctvrtek/">Čtvrtek</a></li>
-    <li class="program__list"><a class="program__link" href="/program/patek/">Pátek</a></li>
-    <li class="program__list"><a class="program__link" href="/program/sobota/">Sobota</a></li>
+    <li class="program__list"><a class="program__link {{ 'program__link--active' if page.fileSlug === 'program' }}" href="/program/">Vše</a></li>
+    <li class="program__list"><a class="program__link {{ 'program__link--active' if page.fileSlug === 'ctvrtek' }}" href="/program/ctvrtek/">Čtvrtek</a></li>
+    <li class="program__list"><a class="program__link {{ 'program__link--active' if page.fileSlug === 'patek' }}" href="/program/patek/">Pátek</a></li>
+    <li class="program__list"><a class="program__link {{ 'program__link--active' if page.fileSlug === 'sobota' }}" href="/program/sobota/">Sobota</a></li>
   </ul>
 
 {{ content | safe }}
