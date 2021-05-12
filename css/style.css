@@ -474,6 +474,46 @@ html {
   color: #e9af00;
 }
 
+.article {
+  padding: 20px;
+}
+.article__title {
+  font-size: 28px;
+  margin-bottom: 0;
+}
+.article__meta {
+  color: #a5a5a5;
+  font-style: italic;
+  margin-top: 5px;
+}
+.article__content {
+  display: block;
+}
+@media screen and (min-width: 999px) {
+  .article__content {
+    display: flex;
+  }
+}
+.article__pic {
+  margin: 0 auto;
+  max-width: 600px;
+  padding-top: 20px;
+}
+@media screen and (min-width: 999px) {
+  .article__pic {
+    flex-basis: 40%;
+  }
+}
+@media screen and (min-width: 999px) {
+  .article__text {
+    flex-basis: 60%;
+    padding-right: 30px;
+  }
+}
+.article__image {
+  width: 100%;
+}
+
 .program .top {
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("/images/program_background.jpg");
 }

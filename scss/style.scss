@@ -550,6 +550,53 @@ html { box-sizing: border-box; }
   }
 }
 
+//články
+
+.article {
+  padding: $spacer;
+
+  &__title {
+    font-size: $f-size-big;
+    margin-bottom: 0;
+  }
+
+  &__meta {
+    color: rgb(165, 165, 165);
+    font-style: italic;
+    margin-top: 5px;
+  }
+
+  &__content {
+    display: block;
+
+    @media screen and (min-width: 999px) {
+      display: flex;
+    }
+  }
+
+  &__pic {
+    margin: 0 auto;
+    max-width: 600px;
+    padding-top: $spacer;
+
+    @media screen and (min-width: 999px) {
+      flex-basis: 40%;
+    }
+  }
+
+  &__text {
+    @media screen and (min-width: 999px) {
+      flex-basis: 60%;
+      padding-right: 30px;
+    }
+  }
+
+  &__image {
+    width: 100%;
+  }
+
+}
+
 //PROGRAM
 
 .program .top {
