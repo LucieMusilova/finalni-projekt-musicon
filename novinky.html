@@ -9,19 +9,19 @@ title: Novinky | MusicOn Brno
     <p class="top__text">Zjisti, jaké jsou nejžhavější novinky festivalu</p>
   </div>
 
-{% for prispevek in collections.novinky | reverse %}
+  {% for prispevek in collections.novinky | reverse %}
 
-<div>
-  <div>
-    <h2>{{ prispevek.data.title }}</h2>
-    <p>{{ prispevek.data.perex }}</p>
-    <p><a href="{{ prispevek.url }}">Více</a></p>
-  </div>
-  <div>
-    <img src="/images/{{ prispevek.data.foto }}" alt="{{ prispevek.data.alt }}">
-  </div>
+  <div class="news__item">
+    <div class="news__text">
+      <h2 class="news__title">{{ prispevek.data.title }}</h2>
+      <p>{{ prispevek.data.perex }}</p>
+      <p><a class="news__link" href="{{ prispevek.url }}">Více</a></p>
+    </div>
+    <div class="news__pic">
+      <img class="news__img" src="/images/{{ prispevek.data.foto }}" alt="{{ prispevek.data.alt }}">
+    </div>
 
-</div>
-{% endfor %} 
+  </div>
+  {% endfor %} 
 
 </section>

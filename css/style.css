@@ -439,6 +439,41 @@ html {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/images/novinky_background.jpg");
 }
 
+.news__item {
+  padding: 20px;
+  margin-top: 20px;
+}
+@media screen and (min-width: 768px) {
+  .news__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+@media screen and (min-width: 768px) {
+  .news__text {
+    padding-right: 20px;
+    flex-basis: 60%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .news__pic {
+    flex-basis: 40%;
+  }
+}
+.news__title {
+  margin-top: 0;
+}
+.news__img {
+  width: 100%;
+}
+.news__link {
+  color: #fcbf00;
+}
+.news__link:hover {
+  color: #e9af00;
+}
+
 .program .top {
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("/images/program_background.jpg");
 }

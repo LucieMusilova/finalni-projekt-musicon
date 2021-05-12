@@ -508,6 +508,48 @@ html { box-sizing: border-box; }
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/images/novinky_background.jpg");
 }
 
+.news {
+  &__item {
+    padding: $spacer; 
+    margin-top: $spacer;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+  }
+
+  &__text {
+    @media screen and (min-width: 768px) {
+      padding-right: $spacer;
+      flex-basis: 60%;
+    }
+  }
+
+  &__pic {
+    @media screen and (min-width: 768px) {
+      flex-basis: 40%;
+    }
+  }
+
+  &__title {
+    margin-top: 0;
+  }
+
+  &__img {
+    width: 100%;
+  }
+
+  &__link {
+    color: $c-marked;
+
+    &:hover {
+      color: $c-marked-hover;
+    }
+  }
+}
+
 //PROGRAM
 
 .program .top {
