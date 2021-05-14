@@ -2,7 +2,7 @@
 layout: novinky.njk
 title: Mumford and Sons zahrají v Brně!
 date: 2021-04-17T11:30
-perex: Domněnku má, by ty je půjdu trasy mohla, správě sebevýkonnější je, mj. přišly telefony formovat polární. Chuť našeho plně hibernujících společenský hmoty propůjčuje i přepis ze zimující brzy upozorňují že.
+perex: Jedním z headlinerů letošního MusicOnu se stávají Mumford and Sons. Tato kapela patří mezi nejoblíbenější interprety na celém světě. Jejich songy Little Lion Man, Guiding Light nebo Hopeless Wanderer roztančili nejeden festival v Evropě, Americe, ale i v Asii nebo Africe. Tento koncert si zkrátka nemůžete nechat ujít. 
 foto: mumford.jpg
 alt: Mumford and Sons zahrají v Brně
 tags: novinky

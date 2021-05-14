@@ -2,7 +2,7 @@
 layout: novinky.njk
 title: Spouštíme rezervace ubytování
 date: 2021-03-12T16:30
-perex: Kavárna divize z existence. Hlasu o vele z softwarový sebevýkonnější v samozřejmě romanticky skutečnosti posledních z společnost radiové, o oslabení pohromou u poloostrova.
+perex: Rezervujte si místo ve festivalovém kempu a buďte v těsné blíszkosti festivalu. Na výběr jsou klasické stany, pohodlné chatky a úplnou novinkou letošního festivalu jsou stylové a plně vybavené karavany. Neváhejte a objednejte si svůj festivalový "pokoj" ještě dnes, počet míst je omezený.
 foto: ubytovani_karavan.jpg
 alt: Spouštíme rezervace ubytování
 tags: novinky
