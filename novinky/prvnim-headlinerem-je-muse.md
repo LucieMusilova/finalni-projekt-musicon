@@ -1,7 +1,7 @@
 ---
 layout: novinky.njk
 title: Prvním ohlášeným headlinerem je Muse
-date: 2021-02-28T9:30
+date: 2021-02-28T09:30
 perex: Prvním headlinerem brněnského MusicOnu se stává britská rocková kapela Muse. Tato známá trojice působí na hudebním poli od roku 1994. V nejedom rádiu jste mohli slyšet písničky jako Uprising, Supermassive Black Hole, Madness nebo Starlight. Jejich show jsou známé svou propracovaností a efekty. O tom se už několikrát mohli přesvědit čeští fanoušci na koncertech v Praze. 
 foto: muse.jpg
 alt: Muse jsou prvním headlinerem MusicOnu
