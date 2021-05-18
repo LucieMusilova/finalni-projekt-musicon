@@ -13,7 +13,7 @@ title: Novinky | MusicOn Brno
 
 	<h1 class="article__title">{{ title }}</h1>
 
-	<p class="article__meta">{{ page.date.toLocaleString('cs-CZ') }}</p>
+	<p class="article__meta">{{ page.date | czDateTime }}</p>
 	<div class="article__content">
 
 		<div class="article__text">

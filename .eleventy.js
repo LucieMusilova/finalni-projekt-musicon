@@ -1,3 +1,5 @@
+const { DateTime } = require("luxon");
+
 module.exports = function(eleventyConfig) {
 
 	// Výchozí výstupní složka: _site
@@ -14,6 +16,10 @@ module.exports = function(eleventyConfig) {
     return arr.slice(0, limit);
   });
   
+// filtr na formát datumu
+  eleventyConfig.addFilter("czDateTime", function(value) {
+    return DateTime.fromJSDate(value).toFormat('d.L.y H:mm');
+  });
 
   return {
     // možné formáty šablon
