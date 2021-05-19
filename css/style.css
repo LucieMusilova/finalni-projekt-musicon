@@ -182,6 +182,7 @@ html {
 
 .news-hp {
   background-color: white;
+  margin-top: -2px;
 }
 .news-hp__item {
   padding: 20px;

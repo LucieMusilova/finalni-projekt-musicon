@@ -230,6 +230,7 @@ html { box-sizing: border-box; }
 
 .news-hp {
   background-color: $c-white;
+  margin-top: -2px;
   
   &__item {
     padding: $spacer;
