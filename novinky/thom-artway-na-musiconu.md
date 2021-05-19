@@ -1,7 +1,7 @@
 ---
 layout: novinky.njk
 title: Thom Artway na MusicOnu
-date: 2021-03-01T16:30
+date: 2021-04-17T11:30
 perex: Prvním tuzemským interpretem, který zahraje na MusicOnu, je Thom Artway. Rodák z Vlachovic se proslavil hitem I Have No Inspiration, která i nyní patří k neojoblíbenějším písním v českách rádiích. Neméně známe jsou i jeho další písničky jako All I Know, Blind Man, Can't Wait a další.
 foto: thom-artway.jpg
 alt: Thom Artway přijede na MusicOn
