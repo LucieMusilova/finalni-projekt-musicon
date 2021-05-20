@@ -654,8 +654,47 @@ html {
   /* 15% from the top and centered */
   padding: 20px;
   border: 1px solid #888;
-  width: 30%;
-  /* Could be more or less, depending on screen size */
+  width: 100%;
+}
+@media screen and (min-width: 459px) {
+  .merch__content,
+.tickets__content,
+.practical__content {
+    width: 80%;
+    /* Could be more or less, depending on screen size */
+  }
+}
+@media screen and (min-width: 599px) {
+  .merch__content,
+.tickets__content,
+.practical__content {
+    width: 70%;
+    /* Could be more or less, depending on screen size */
+  }
+}
+@media screen and (min-width: 699px) {
+  .merch__content,
+.tickets__content,
+.practical__content {
+    width: 50%;
+    /* Could be more or less, depending on screen size */
+  }
+}
+@media screen and (min-width: 999px) {
+  .merch__content,
+.tickets__content,
+.practical__content {
+    width: 40%;
+    /* Could be more or less, depending on screen size */
+  }
+}
+@media screen and (min-width: 1449px) {
+  .merch__content,
+.tickets__content,
+.practical__content {
+    width: 30%;
+    /* Could be more or less, depending on screen size */
+  }
 }
 .merch__close,
 .tickets__close,

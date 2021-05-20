@@ -745,7 +745,23 @@ html { box-sizing: border-box; }
     margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
-    width: 30%; /* Could be more or less, depending on screen size */
+    width: 100%;
+
+    @media screen and (min-width: 459px) {
+      width: 80%; /* Could be more or less, depending on screen size */
+    }
+    @media screen and (min-width: 599px) {
+      width: 70%; /* Could be more or less, depending on screen size */
+    }
+    @media screen and (min-width: 699px) {
+      width: 50%; /* Could be more or less, depending on screen size */
+    }
+    @media screen and (min-width: 999px) {
+      width: 40%; /* Could be more or less, depending on screen size */
+    }
+    @media screen and (min-width: 1449px) {
+      width: 30%; /* Could be more or less, depending on screen size */
+    }
   }
 
   /* The Close Button */
