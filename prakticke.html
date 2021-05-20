@@ -17,14 +17,14 @@ title: Praktické | MusicOn Brno
       <img class="practical__img" src="/images/ubytovani_stan.jpg" alt="Stan">
       <h3 class="practical__title">Stan</h3>
       <p class="practical__text">Zarezervuj si svoje místo pro stan ve festivalovém kempu v blízkosti areálu a se skvělou dostupností z nádraží i centra města. </p>
-      <button class="practical__btn">Rezervovat</button>
+      <button id="practical__button1" class="practical__button">Rezervovat</button>
     </div>
 
     <div class="practical__item">
       <img class="practical__img" src="/images/ubytovani_chatky.jpg" alt="Chatky">
       <h3 class="practical__title">Chatky</h3>
       <p class="practical__text">Pokud oceníš větší pohodlí, máme pro tebe připravených několik útulných chatek v areálu kempu a s vlastním sociálním zařízení. </p>
-      <button class="practical__btn">Rezervovat</button>
+      <button id="practical__button2" class="practical__button">Rezervovat</button>
       
     </div>
 
@@ -32,7 +32,7 @@ title: Praktické | MusicOn Brno
       <img class="practical__img" src="/images/ubytovani_karavan.jpg" alt="Karavan">
       <h3 class="practical__title">Karavan</h3>
       <p class="practical__text">Novinkou letošního ročníku jsou tyto stylové karavany pro 2 osoby. Zažij festival netradičně. Ale pozor, k dispozici je jen 20 vozů! </p>
-      <button class="practical__btn">Rezervovat</button>
+      <button id="practical__button3" class="practical__button">Rezervovat</button>
       
     </div>
   </div>
@@ -58,7 +58,7 @@ title: Praktické | MusicOn Brno
     
       <div class="practical__transport">
         <h3 class="practical__vehicle">MHD</h3>
-        <p class="practical__how">Městská doprava nabízí rychlé a pohodlné spojení k festivalovému areálu z centra města i vlakového a autobusového nádraží. Z vlakového nádraží nasedněte na tramvaj č. 1 a vystupte na zastávce Výstaviště hlavní vstup. Z autobusového nádraží nasedněte na autobus č. 84 a vystupte na zastávce Velodrom. Další spoje jsou k dispozici na stránkách <a href="https://www.dpmb.cz">dopravního podniku</a>.</p>
+        <p class="practical__how">Městská doprava nabízí rychlé a pohodlné spojení k festivalovému areálu z centra města i vlakového a autobusového nádraží. Z vlakového nádraží nasedněte na tramvaj č. 1 a vystupte na zastávce Výstaviště hlavní vstup. Z autobusového nádraží nasedněte na autobus č. 84 a vystupte na zastávce Velodrom. Další spoje jsou k dispozici na stránkách <a href="https://www.dpmb.cz ">dopravního podniku</a>.</p>
       </div>
     </div>
 
@@ -68,5 +68,42 @@ title: Praktické | MusicOn Brno
     
   </div>
 
+ <!-- The Modal -->
+ <div id="practical__modal" class="practical__modal">
 
+  <!-- Modal content -->
+  <div class="practical__content">
+    <span class="practical__close">&times;</span>
+
+    <form class="practical__form" method="post" action="http://formular.itgirls.cz">
+      <label class="practical__label" for="options">Chci rezervovat:</label>
+      <select class="practical__input" id="options">
+        <option>Stan</option>
+        <option>Chatku</option>
+        <option>Karavan</option>
+      </select>
+      <label class="practical__label" for="name">Tvoje jméno a příjmení: <span class="practical__required">*</span> </label>
+      <input class="practical__input" type="text" name="name" id="name" maxlength="30" required>
+
+      <label class="practical__label" for="email">Tvůj email: <span class="practical__required">*</span></label>
+      <input class="practical__input" type="email" name="email" id="email" maxlength="30" required>
+
+      <label class="practical__label" for="phone">Tvůj telefon: </label>
+      <input class="practical__input" type="tel" name="phone" id="phone" maxlength="15">
+
+      <label class="practical__label" for="message">Zpráva pro nás: </label>
+      <textarea class="practical__input" name="message" id="message" rows="7" maxlength="1000"> </textarea>
+
+      <div class="practical__checkbox">
+        <input  type="checkbox" name="check" id="check" value="yes">
+        <label  for="check">Souhlasím se zpracováním osobních údajů </label>
+      </div>
+
+      <button class="practical__btn" type="submit" name="button" id="send">Rezervovat ubytování</button>
+      
+    </form>
+
+  </div>
+
+</div>
 </section>
