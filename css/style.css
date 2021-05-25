@@ -229,6 +229,9 @@ html {
   -o-object-fit: cover;
      object-fit: cover;
 }
+.news-hp__img:first-child {
+  margin-top: 4px;
+}
 .news-hp__link {
   color: #fcbf00;
 }

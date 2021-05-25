@@ -245,7 +245,7 @@ html { box-sizing: border-box; }
       &:last-child {
         padding-bottom: 0;
       }
-      
+
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -280,6 +280,10 @@ html { box-sizing: border-box; }
     width: 100%;
     max-height: 180px;
     object-fit: cover;
+
+    &:first-child {
+      margin-top: 4px;
+    }
   }
 
   &__link {
