@@ -39,24 +39,19 @@ title: MusicOn Brno | Fiktivní hudební festival
       
       <section class="news-hp">
         <h2 class="news-hp__title">Novinky</h2>
-
+  {% for prispevek in collections.novinky | reverse | limit(3) %}
         <div class="news-hp__item">
           <div class="news-hp__news">
-            {% for prispevek in collections.novinky | reverse | limit(3) %}
-
                   <h2>{{ prispevek.data.title }}</h2>
                   <p>{{ prispevek.data.perex }}</p>
-                  <p><a class="news-hp__link" href="{{ prispevek.url }}">Více</a></p>          
-            {% endfor %} 
+                  <p><a class="news-hp__link" href="{{ prispevek.url }}">Více</a></p>       
           </div>
 
           <div class="news-hp__pic">
-            {% for prispevek in collections.novinky | reverse | limit(1) %}
-            <img class="news-hp__img"  src="/images/{{ prispevek.data.foto }}" alt="{{ prispevek.data.alt }}">
-            {% endfor %} 
+              <img class="news-hp__img"  src="/images/{{ prispevek.data.foto }}" alt="{{ prispevek.data.alt }}">
           </div>
         </div>
-
+  {% endfor %} 
       </section>
 
       <section class="line-up">
