@@ -228,9 +228,7 @@ html {
   max-height: 180px;
   -o-object-fit: cover;
      object-fit: cover;
-}
-.news-hp__img:first-child {
-  margin-top: 4px;
+  display: block;
 }
 .news-hp__link {
   color: #fcbf00;
