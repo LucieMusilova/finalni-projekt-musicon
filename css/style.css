@@ -628,10 +628,6 @@ html {
   margin-top: 0;
 }
 
-.merch .top {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("/images/merch_background.jpg");
-}
-
 .merch,
 .tickets,
 .practical {
@@ -664,7 +660,6 @@ html {
 .practical__content {
   background-color: #fefefe;
   margin: 15% auto;
-  /* 15% from the top and centered */
   padding: 20px;
   border: 1px solid #888;
   width: 100%;
@@ -674,7 +669,6 @@ html {
 .tickets__content,
 .practical__content {
     width: 80%;
-    /* Could be more or less, depending on screen size */
   }
 }
 @media screen and (min-width: 599px) {
@@ -682,7 +676,6 @@ html {
 .tickets__content,
 .practical__content {
     width: 70%;
-    /* Could be more or less, depending on screen size */
   }
 }
 @media screen and (min-width: 699px) {
@@ -690,7 +683,6 @@ html {
 .tickets__content,
 .practical__content {
     width: 50%;
-    /* Could be more or less, depending on screen size */
   }
 }
 @media screen and (min-width: 999px) {
@@ -698,7 +690,6 @@ html {
 .tickets__content,
 .practical__content {
     width: 40%;
-    /* Could be more or less, depending on screen size */
   }
 }
 @media screen and (min-width: 1449px) {
@@ -706,7 +697,6 @@ html {
 .tickets__content,
 .practical__content {
     width: 30%;
-    /* Could be more or less, depending on screen size */
   }
 }
 .merch__close,
@@ -725,6 +715,10 @@ html {
   color: black;
   text-decoration: none;
   cursor: pointer;
+}
+
+.merch .top {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("/images/merch_background.jpg");
 }
 
 .products {

@@ -1,0 +1,96 @@
+@use 'vars';
+
+//NOVINKY
+
+.news .top {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/images/novinky_background.jpg");
+}
+
+.news {
+  &__item {
+    padding: vars.$spacer; 
+    margin-top: vars.$spacer;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+  }
+
+  &__text {
+    @media screen and (min-width: 768px) {
+      padding-right: vars.$spacer;
+      flex-basis: 60%;
+    }
+  }
+
+  &__pic {
+    @media screen and (min-width: 768px) {
+      flex-basis: 40%;
+    }
+  }
+
+  &__title {
+    margin-top: 0;
+  }
+
+  &__img {
+    width: 100%;
+  }
+
+  &__link {
+    color: vars.$c-marked;
+
+    &:hover {
+      color: vars.$c-marked-hover;
+    }
+  }
+}
+
+//články
+
+.article {
+  padding: vars.$spacer;
+
+  &__title {
+    font-size: vars.$f-size-big;
+    margin-bottom: 0;
+  }
+
+  &__meta {
+    color: rgb(165, 165, 165);
+    font-style: italic;
+    margin-top: 5px;
+  }
+
+  &__content {
+    display: block;
+
+    @media screen and (min-width: 999px) {
+      display: flex;
+    }
+  }
+
+  &__pic {
+    margin: 0 auto;
+    max-width: 600px;
+    padding-top: vars.$spacer;
+
+    @media screen and (min-width: 999px) {
+      flex-basis: 40%;
+    }
+  }
+
+  &__text {
+    @media screen and (min-width: 999px) {
+      flex-basis: 60%;
+      padding-right: 30px;
+    }
+  }
+
+  &__image {
+    width: 100%;
+  }
+
+}

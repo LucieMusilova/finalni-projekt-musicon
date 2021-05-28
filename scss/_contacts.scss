@@ -1,0 +1,73 @@
+@use 'vars';
+
+//KONTAKTY
+
+.contacts .top {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/images/kontakty_background.jpg");
+}
+
+.contacts,
+.practical {
+  &__call,
+  &__write,
+  &__social {
+    padding: vars.$spacer vars.$spacer 0 vars.$spacer;
+
+  }
+
+  &__form {
+    width: 100%;
+    max-width: 550px;
+    border: 2px solid vars.$c-marked;
+    border-radius: 10px;
+    padding: vars.$spacer;
+    margin-top: 30px;
+    background-color: #fffaed;
+  }
+
+  &__label {
+    display: block;
+    margin-top: 10px;
+  }
+
+  &__input {
+    margin: 8px 0 10px 0;
+    width: 100%;
+    border: 1px solid vars.$c-marked;
+    border-radius: 2px;
+    padding: 10px;
+    font-size: vars.$f-size-base;
+
+    &:focus {
+      outline: 0;
+      border: 2px solid vars.$c-marked-hover;
+      background-color: #ffecb2;
+    }
+
+  }
+
+  &__checkbox {
+    display: inline-block;
+    margin-top: 10px;
+  }
+
+  &__btn {
+    display: block;
+    margin-top: vars.$spacer;
+    margin-left: auto;
+    padding: 10px vars.$spacer;
+    background-color: vars.$c-marked;
+    color: vars.$c-white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+
+    &:hover {
+      background-color: vars.$c-marked-hover;
+    }
+  }
+
+  &__required {
+    color: vars.$c-marked;
+  }
+}

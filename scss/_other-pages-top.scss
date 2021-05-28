@@ -1,0 +1,40 @@
+@use 'vars';
+
+//SPOLEČNÉ NASTAVENÍ PRO OSTATNÍ STRÁNKY
+
+.merch,
+.contacts,
+.news,
+.practical,
+.tickets,
+.program {
+  background-color: vars.$c-white;
+  max-width: 1140px;
+  margin: 0 auto;   
+  padding-bottom: vars.$spacer;
+}
+
+.top {
+  background-size: 100%, cover;
+  height: 200px;
+
+  &__title {
+    margin:0;
+    text-transform: uppercase;
+    font-size: vars.$f-size-big;
+  }
+
+  &__title,
+  &__text {
+    color: vars.$c-white;
+    text-shadow: 1px 1px 1px black;
+    padding-left: vars.$spacer;
+    padding-right: vars.$spacer;
+    transform: translateY(80px);
+    font-weight: bold;
+  }
+
+  &__text {
+    font-size: vars.$f-size-middle;
+  }
+}
